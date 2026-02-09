@@ -17,8 +17,8 @@ export default function SlideshowSection() {
 
   return (
     <section className={styles.section}>
-      <Slideshow images={images} delay={0} />
-      <Slideshow images={images} delay={15} />
+      <Slideshow images={images} delay={-1} />
+      <Slideshow images={images} delay={-22} />
       <Slideshow images={images} delay={-8} />
     </section>
   );
