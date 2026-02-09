@@ -6,6 +6,7 @@ export default function TextPage() {
   return (
     <>
 <Header />
+<div className={styles.section}>
     <div className={styles.container}>
       <h1>Who are we?</h1>
       <p>
@@ -36,6 +37,7 @@ export default function TextPage() {
          "Set and forget" isn't in our vocabulary. We believe in a hands-on, personalized approach. Choosing BASEAPP means choosing a partner committed to tailoring our platform to fit your unique business needs. We dive deep into the nitty-gritty of your operations, ensuring our software isn't just another tool, but a cornerstone of your business success.
         </p>
       </section>
+    </div>
     </div>
 
     <Footer />
