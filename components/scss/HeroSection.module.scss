@@ -14,6 +14,16 @@
     z-index: -1;
   }
 
+ .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.695),
+    rgba(0, 0, 0, 0.662)
+  );
+  z-index: 0;
+}
+
   .content {
     position: absolute;
     top: 50%;

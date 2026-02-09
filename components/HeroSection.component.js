@@ -5,6 +5,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className={styles.hero}>
+      <div className={styles.overlay}></div>
       {/* Video de fondo */}
       <video
         className={styles.videoBg}
