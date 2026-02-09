@@ -25,8 +25,8 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: "Website <onboarding@resend.dev>", // cambiar por dominio verificado
-      to: "uk@baseapp.co.uk",
+      from: "Baseapp UK <contact@baseapp.gi>", 
+      to: "jmbmakesitwork@gmail.com",
       subject: "New Contact Form Submission",
       reply_to: email,
       html: `
