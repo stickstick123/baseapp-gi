@@ -11,7 +11,7 @@ export default function Contact() {
     phone: "",
     company: "",
     jobTitle: "",
-    city: "",
+    town: "",
     features: "",
   });
 
@@ -40,7 +40,7 @@ export default function Contact() {
           phone: "",
           company: "",
           jobTitle: "",
-          city: "",
+          town: "",
           features: "",
         });
       } else {
@@ -130,13 +130,13 @@ export default function Contact() {
             </div>
 
             <div className={styles.field}>
-              <label htmlFor="city">Town / City</label>
+              <label htmlFor="town">Town / City</label>
               <input
-                id="city"
+                id="town"
                 className={styles.inputField}
                 type="text"
-                name="city"
-                value={formData.city}
+                name="town"
+                value={formData.town}
                 onChange={handleChange}
               />
             </div>

@@ -26,7 +26,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: "Baseapp UK <contact@baseapp.gi>", 
-      to: "jmbmakesitwork@gmail.com",
+      to: "stickhubbard@gmail.com",
       subject: "New Contact Form Submission",
       reply_to: email,
       html: `
