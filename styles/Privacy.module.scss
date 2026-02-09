@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 2rem;
+  font-family: sans-serif;
+  color: black;
+  font-family: 'Noto Sans';
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  line-height: normal;
+
+  }
+
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  
+}
+
+

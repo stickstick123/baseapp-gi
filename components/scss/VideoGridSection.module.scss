@@ -1,0 +1,124 @@
+.section {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+    background-color: #E2E3E5;
+    padding: 100px;
+}
+  .title {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'Staatliches';
+    color: #000;
+    margin: 0;
+    margin-top: 20px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  .container{
+      display: flex;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  width: 90%;
+  margin: auto;
+  }
+
+/* ----- VIDEO ----- */
+
+.videoColumn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+}
+
+/* ----- GRID ----- */
+
+.gridColumn {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gridItem {
+  position: relative;
+  background-size: cover;
+  background-color: #000;
+  max-height: 250px;
+  border-radius: 10px;
+  border: 2px solid white;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bgImage {
+  position: absolute;
+  width: 150%;
+  z-index: 0;
+}
+
+
+/* Overlay interno */
+.overlay {
+
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  color: #fff;
+  text-align: left;
+  font-family: 'Noto Sans';
+  z-index: 1;
+
+  h3 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 19px;
+  }
+}
+
+/* ----- MOBILE ----- */
+
+@media screen and (max-width: 768px) {
+    .section{
+        width: 100%;
+        padding: 20px;
+    }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .gridColumn {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .gridItem{
+    height: 300px;
+  }
+
+  .videoColumn{
+    margin-top: 30px;
+  }
+}

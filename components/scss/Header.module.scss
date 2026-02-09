@@ -1,0 +1,145 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background 0.3s, padding 0.3s;
+  font-family: 'Noto Sans';
+  background-color: #000;
+
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+/* Desktop nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  .navLink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #f0a500;
+    }
+  }
+
+  .primaryBtn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #f0a500;
+    color: #000;
+    border-radius: 4px;
+  }
+
+  .secondaryBtn {
+    
+    margin-left: 1rem;
+    padding: 0.3rem 0.3rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #0C0C0C;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .secondaryBtn:hover {
+    text-decoration: underline;
+    background-color: #67BBFF;
+  }
+}
+
+
+/* Hamburger (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+    .header{
+        background-color: #000;
+    }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -2000px;           // oculto a la derecha
+    height: 100vh;
+    width: 100%;            // ancho del menú
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;   // items alineados a la derecha
+    gap: 2rem;
+    padding: 2rem;
+    padding-top: 5rem;
+    background-color: #000;
+    transition: right 0.5s ease-in-out;
+    z-index: 60;
+  }
+
+  .nav.open {
+    right: 0;                // visible al abrir
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 70;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      transition: all 0.3s;
+    }
+  }
+}
+
+/* Overlay cuando se abre el menú */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  z-index: 50;
+}

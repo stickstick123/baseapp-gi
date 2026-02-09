@@ -1,0 +1,133 @@
+.contactPage {
+  position: relative;
+  min-height: 100vh;
+  background: url("https://www.baseapp.com.au/images/contact-bg.jpeg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Noto Sans';
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.75)
+  );
+  z-index: 0;
+}
+
+.container {
+    margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 700px;
+  
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.title {
+  text-align: left;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: 'Staatliches';
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Cada campo es una fila completa */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; // espacio entre label y input
+  width: 100%;
+  margin-top: 10px;
+}
+
+.field label {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Inputs y textareas como clases locales */
+.inputField {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  
+  border: 1px solid white;
+  background: #131313;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textAreaField {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid white;
+  background: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  min-height: 100px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: white;
+}
+
+.disclaimer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.submitBtn {
+    max-width: 100px;
+  padding: 10px;
+  background: #131313;
+  color: white;
+  border: white 1px solid;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Noto Sans';
+  font-size: 16px;
+}
+
+.submitBtn:hover {
+  background: grey;
+}
+
+.status {
+  margin-top: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form {
+    gap: 1rem;
+  }
+}

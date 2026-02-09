@@ -1,0 +1,41 @@
+.scrollSection {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  padding: 1rem 0;
+}
+
+.scroller {
+  display: flex;
+  width: max-content; /* ancho del contenido total */
+  animation: scroll 30s linear infinite;
+}
+
+.item {
+  flex: 0 0 auto; /* no se encoja */
+  margin-right: 2rem;
+
+  img {
+    height: 90px; /* ajusta altura según necesites */
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+}
+
+/* Animación de scroll horizontal */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* mueve la mitad, porque duplicamos imágenes */
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .item img {
+    height: 100px;
+  }
+}

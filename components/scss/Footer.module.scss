@@ -1,0 +1,117 @@
+.footer {
+   width: 100%;      
+   
+  margin: 0;        
+  padding: 3rem 1.5rem; 
+  box-sizing: border-box;
+  background-color: #111;
+  color: white;
+  font-family: 'Noto Sans';
+ 
+
+  .topSection {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .topText {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      max-width: 75%;
+      margin: auto;
+    }
+    .secondaryBtn {
+    margin-top: 20px;
+    margin-left: 1rem;
+    padding: 0.3rem 0.3rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #0C0C0C;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .secondaryBtn:hover {
+    text-decoration: underline;
+    background-color: grey;
+  }
+
+
+  }
+
+  .bottomSection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      min-width: 150px;
+
+      h4 {
+        margin-bottom: 1rem;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .link {
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: underline;
+
+      }
+
+      .logoWrapper {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 100%;
+}
+
+      .logo {
+        height: 50px;
+        
+        align-self: center;
+      }
+
+      .socials {
+        display: flex;
+        gap: 1rem;
+        
+        img{
+        width: 20px;
+        height: auto;
+    }
+
+
+        a {
+          font-size: 1.2rem;
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            color: #f0a500;
+          }
+        }
+      }
+    }
+  
+  }
+
+  @media screen and (max-width: 768px) {
+    .bottomSection {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .column {
+        min-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

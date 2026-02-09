@@ -1,0 +1,63 @@
+.section {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+  padding: 150px;
+    background-color: #E2E3E5;
+}
+
+/* ----- COLUMN ----- */
+
+.column {
+  flex: 1;
+  position: relative;
+  height: 600px;   /* altura del rectángulo */
+  overflow: hidden;
+  border: solid 4px white;
+  border-radius: 20px;
+}
+
+/* ----- IMÁGENES ----- */
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 40s infinite;
+}
+
+/* ----- ANIMACIÓN ----- */
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  25%  { opacity: 1; }
+  33%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* ----- MOBILE ----- */
+
+@media screen and (max-width: 768px) {
+  .section {
+    
+    padding: 0;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .column:nth-child(2),
+  .column:nth-child(3) {
+    display: none;
+  }
+
+  .column {
+    height: 600px;
+  }
+}
