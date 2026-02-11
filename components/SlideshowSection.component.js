@@ -12,7 +12,7 @@ export default function SlideshowSection() {
     "https://www.baseapp.com.au/images/slides/slide_8.jpeg",
     "https://www.baseapp.com.au/images/slides/slide_9.jpeg",
     "https://www.baseapp.com.au/images/slides/slide_10.jpeg",
-    "https://www.baseapp.com.au/images/slides/slide_11.jpeg",
+  
   ];
 
   return (

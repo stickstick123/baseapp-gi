@@ -30,7 +30,7 @@ export default function TwoColumnSection() {
         <div className={styles.videoContainer}>
           <video
             src="https://www.baseapp.com.au/videos/zirc.mp4" // reemplaza con tu video
-            controls
+            
             autoPlay
             muted
             loop

@@ -14,7 +14,7 @@ export default function VideoGridSection() {
           autoPlay
           muted
           loop
-          controls
+          
           className={styles.video}
         />
       </div>
